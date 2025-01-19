@@ -2,100 +2,106 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex flex-col items-center justify-center min-h-screen gap-10">
+      <div className="text-center mt-10">
+        <h1 className="text-4xl font-bold">Hello, I'm Yassine Mouadden</h1>
+        <h2 className="text-xl mt-2">Étudiant ingénieur à l'ENSEM Nancy</h2>
+        <h2 className="text-lg mt-1">Futur ingénieur logiciel</h2>
+      </div>
+      <div className="flex justify-center mt-6">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/avatar2.png"
+          alt="Yassine Mouadden"
+          width={250}
+          height={250}
+          className="rounded-full border border-gray-300"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      </div>
+      <div className="flex gap-4 mt-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/yassine-mouadden-008a68254/"
             target="_blank"
-            rel="noopener noreferrer"
+            className="px-4 py-2 bg-white text-black rounded-xl hover:bg-blue-700"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            LinkedIn
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/YassineM0"
             target="_blank"
-            rel="noopener noreferrer"
+            className="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-900"
           >
-            Read our docs
+            GitHub
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div className="w-4/5 md:w-3/5 mt-8">
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Éducation</h3>
+          <ul className="list-disc ml-6 mt-2">
+            <li><strong>ENSEM Nancy</strong> (Sept 2024 - Aujourd’hui): systèmes numériques, Nancy, France</li>
+            <li><strong>ENSMR Rabat</strong> (Sept 2022 - Sept 2024): ingénierie génie informatique, Rabat, Maroc</li>
+            <li><strong>CPGE Ibn Taymiya</strong> (Sept 2020 - Sept 2022): MPSI-MP, Marrakech, Maroc</li>
+          </ul>
+        </section>
+
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Expérience</h3>
+          <ul className="list-disc ml-6 mt-2">
+            <li>
+              <strong>Stagiaire - CNESTEN</strong> (Juil. 2024 - Sept 2024): Développement d’un système informatique pour la surveillance et le contrôle d’une serre intelligente.
+              <ul className="list-disc ml-6 mt-1">
+                <li>Développement de logiciels</li>
+                <li>Infrastructure informatique</li>
+                <li>Conception de logiciels</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Projets</h3>
+          <ul className="list-disc ml-6 mt-2">
+            <li>
+              <strong>C-multithreading-traffic-simulation </strong>: Simulation de trafic multithreadée en C, permettant de modéliser et de gérer des flux de véhicules dans un environnement simulé, avec une gestion optimisée des threads pour un traitement parallèle et fluide.
+              <ul className="list-disc ml-6 mt-1">
+                <li>Compétences : C, Git</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Projet Labyrinthe</strong>: Jeu solo avec génération de labyrinthes, comportements de monstres, et fonctionnalités avancées (pièges, téléporteurs).
+              <ul className="list-disc ml-6 mt-1">
+                <li>Compétences : Java, Maven, Scrum, Git</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Compétences Techniques</h3>
+          <ul className="list-disc ml-6 mt-2">
+            <li>Systèmes d’exploitation: Windows, Linux</li>
+            <li>Langages: C/C++, Java, JavaScript</li>
+            <li>Outils: Git, LATEX, Office</li>
+            <li>Langues: Français (courant), Anglais (courant)</li>
+          </ul>
+        </section>
+
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Activités Extrascolaires</h3>
+          <ul className="list-disc ml-6 mt-2">
+            <li>Responsable de la programmation compétitive au Mines IT Club (Mai 2023)</li>
+            <li>4e place au Contest Final des Coders Union (Mai 2023)</li>
+            <li>Top 30 au 100 days Codeland de l’IEEESB ENSIAS (Mai 2023)</li>
+          </ul>
+        </section>
+
+        <section className="mb-6">
+          <h3 className="text-2xl font-semibold">Contacts</h3>
+          <ul className="list-disc ml-6 mt-2">
+           
+            <li>Email: <a href="mailto:yassinemoa482@gmail.com" className="text-blue-500">yassinemoa482@gmail.com</a></li>
+          </ul>
+        </section>
+      </div>
     </div>
   );
 }
