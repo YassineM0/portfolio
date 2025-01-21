@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-10 bg-black">
+    <div className="flex flex-col items-center justify-center min-h-screen gap-10 bg-black text-white">
       <div className="text-center mt-10">
         <h1 className="text-4xl font-bold">Hello, I'm Yassine Mouadden</h1>
         <h2 className="text-xl mt-2">Étudiant ingénieur à l'ENSEM Nancy</h2>
@@ -21,14 +21,14 @@ export default function Home() {
           <a
             href="https://www.linkedin.com/in/yassine-mouadden-008a68254/"
             target="_blank"
-            className="px-4 py-2 bg-black text-white rounded-xl hover:bg-blue-700"
+            className="px-4 py-2 bg-white text-black rounded-xl hover:bg-blue-700"
           >
             LinkedIn
           </a>
           <a
             href="https://github.com/YassineM0"
             target="_blank"
-            className="px-4 py-2 bg-black text-white rounded-xl hover:bg-gray-900"
+            className="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-900"
           >
             GitHub
           </a>
